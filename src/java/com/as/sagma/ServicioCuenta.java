@@ -10,6 +10,6 @@ package com.as.sagma;
  *
  * @author T107
  */
-public class ServicioCuenta {
+public interface ServicioCuenta {
     public String crearCuenta();
 }

@@ -14,7 +14,8 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
-        <url-pattern>*.htm</url-pattern>
+        <url-pattern>/</url-pattern>
+        <!-- La diagonal funciona para ocultar la direccion en el url del sitio web puede ser util como un tipo de seguridad -->
     </servlet-mapping>
     <session-config>
         <session-timeout>

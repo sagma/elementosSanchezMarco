@@ -6,6 +6,9 @@
 
 package com.as.sagma;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 /**
  *
  * @author T107
@@ -13,8 +16,11 @@ package com.as.sagma;
 public class ProbarCuentas {
     
     public static void main(String args[]){
+        
+        ApplicationContext ctx=new AnnotationConfigApplicationContext(ApConfig.class);
+        ServicioCuenta cuenta= ctx.getBean(ServicioCuenta.class);
         System.out.println("Bienvenido a la creacion de cuentas");
-        ServicioCuenta cuenta=new CuentaAhorroImpl();
+        // ServicioCuenta cuenta=new CuentaAhorroImpl();
         System.out.println(cuenta.crearCuenta());
     }
 }

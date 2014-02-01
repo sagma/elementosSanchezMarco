@@ -10,6 +10,10 @@ package com.as.sagma;
  *
  * @author T107
  */
-public class CuentaNomina extends ServicioCuenta{
+public class CuentaNomina implements ServicioCuenta{
+
+    public String crearCuenta() {
+        return "Se creo cuenta de nomina";
+    }
     
 }
