@@ -1,6 +1,6 @@
 <%-- 
-    Document   : algodon
-    Created on : 31/01/2014, 09:40:32 PM
+    Document   : presentacion
+    Created on : 4/02/2014, 08:23:25 PM
     Author     : T107
 --%>
 
@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Primer Página</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1>Bienvenido a mi sitio que por ahora esta horrible</h1>
+        <h1>Hello World!</h1>
     </body>
 </html>
