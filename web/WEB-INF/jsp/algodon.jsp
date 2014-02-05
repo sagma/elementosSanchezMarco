@@ -9,7 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Primer Página</title>
+        <title>Primer Pagina </title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="carousel.css" rel="stylesheet">
     </head>
     <body>
         <h1>Bienvenido a mi sitio que por ahora esta horrible</h1>

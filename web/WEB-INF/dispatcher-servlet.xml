@@ -20,8 +20,8 @@
   
 
         
-  
-    <beans:bean id="viewResolver"
+  <!-- todo esto funciona para ocultar las extenciones en la url-->
+    <beans:bean id="viewResolver"                   
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />  
