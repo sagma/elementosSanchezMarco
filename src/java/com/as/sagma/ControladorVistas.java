@@ -26,7 +26,7 @@ public class ControladorVistas {
     
 @RequestMapping(value="/nominas")                   /**este RequestMapping crea una especie de pagina que va a ocultar la extencion**/
 public String accesoANominas(Model model){             /** este metodo nunca se utiliza **/
-    model.addAttribute("cuenta", cuenta.crearCuenta());         /**toma el valor declarado anteriormente del Autowired y lo nombramos como cuenta**/
+    model.addAttribute("cualquiernombre", cuenta.crearCuenta());         /**toma el valor declarado anteriormente del Autowired y lo nombramos como cuenta**/
     return "algodon";                       /**Retorna el archivo algodon.jsp**/
 }    
     

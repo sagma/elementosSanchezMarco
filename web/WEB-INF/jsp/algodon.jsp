@@ -15,5 +15,6 @@
     </head>
     <body>
         <h1>Bienvenido a mi sitio que por ahora esta horrible</h1>
+        ${cualquiernombre}          <!el simbolo de $ se utiliza para visualizar>
     </body>
 </html>

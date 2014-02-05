@@ -21,7 +21,7 @@ public class ApConfig {
     @Bean
     ServicioCuenta crearCuentaDeBanco(){
         
-        return new CuentaAhorroImpl();
+        return new CuentaNominaImpl();
         
     }
 }
