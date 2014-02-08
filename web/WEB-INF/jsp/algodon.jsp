@@ -10,10 +10,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Primer Pagina </title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="carousel.css" rel="stylesheet">
+        <link href="../recursos/css/estilos-cuentas.css" rel="stylesheet">
+
     </head>
     <body>
+        <ul>
+            <li>Cuentas</li>
+            <li>Altas</li>
+            <li>Bajas</li>
+            <li>Busquedas</li>
+            <li>Actualizar</li>
+        </ul>
         <h1>Bienvenido a mi sitio que por ahora esta horrible</h1>
         ${cualquiernombre}          <!el simbolo de $ se utiliza para visualizar>
     </body>
