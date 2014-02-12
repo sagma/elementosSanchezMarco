@@ -12,4 +12,6 @@ package com.as.sagma;
  */
 public interface ServicioCuenta {
     public String crearCuenta();
+    
+    
 }
