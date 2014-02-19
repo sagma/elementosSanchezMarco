@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 
-@Controller
+@Controller                                         /**indica que esto es un controlador @es una anotacion de tipo spring**/
 @RequestMapping(value="/empresaX")                  /**Crea en la url una especie de subcarpeta**/
 
 public class ControladorVistas {
 
-    @Autowired ServicioCuenta cuenta;               /**Se declara para poder utilizarlo en cualquiera de los RequestMapping**/
+    @Autowired ServicioCuenta cuenta;               /**Se declara para poder utilizarlo en cualquiera de los RequestMapping ESTE ES LA CONEXION CON EL MODEL (ServicioCuentas) **/
     
 @RequestMapping(value="/nominas")                   /**este RequestMapping crea una especie de pagina que va a ocultar la extencion**/
 public String accesoANominas(Model model){             /** este metodo nunca se utiliza **/
