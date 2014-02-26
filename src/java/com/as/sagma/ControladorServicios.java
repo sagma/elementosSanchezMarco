@@ -34,10 +34,11 @@ public class ControladorServicios {
             
             @RequestMapping(value="/usuarios-json", method=RequestMethod.GET,
                     headers={"Accept=application/json"})
-            public @ResponseBody String buscarUsuarios(){
+            public @ResponseBody String buscarUsuarios()throws Exception{
                 Map<String, ArrayList<Usuario>> singletonMap=Collections.singletonMap("Usuarios", GenerarUsuarios.obtenerUsuario());
              
                 ObjectMapper mapper=new ObjectMapper();
+                return mapper.writeValueAsString(singletonMap);
                 
             }
 }
