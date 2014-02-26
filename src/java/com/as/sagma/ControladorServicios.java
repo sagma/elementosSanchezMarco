@@ -9,6 +9,7 @@ package com.as.sagma;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  *
@@ -21,7 +22,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ControladorServicios {
  
     @RequestMapping(value="/hola",method=RequestMethod.GET,
-            headers={"Accept=text/html"}                /** da la salida como texto o html **/
-            public @ResponseBody
-    )
+            headers={"Accept=text/json"} )               /** da la salida como texto o html **/
+            public @ResponseBody String enviarMensaje(){
+                String mensajito="Hola mundo desde Rest";
+                return mensajito;
+            }
 }
