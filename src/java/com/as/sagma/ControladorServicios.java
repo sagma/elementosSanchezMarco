@@ -41,4 +41,22 @@ public class ControladorServicios {
                 return mapper.writeValueAsString(singletonMap);
                 
             }
+            
+            
+            
+            
+            //** paso7 guia **/
+          
+            @RequestMapping(value="/servicio-usuarios", method=RequestMethod.GET,
+                    headers={"Accept=application/json"})
+            public @ResponseBody String generarUsuario()throws Exception{
+                Map<String, ArrayList<Usuario2>> singletonMap=Collections.singletonMap("Usuarios", GeneradorDeUsuarios.generarUsuario());
+             
+                ObjectMapper mapper=new ObjectMapper();
+                return mapper.writeValueAsString(singletonMap);
+                
+            }
 }
+
+
+
